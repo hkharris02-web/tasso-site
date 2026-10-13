@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tasso Industrial | Pad Mount Transformers and Complementary Items</title>
-<meta name="description" content="Tasso Industrial LLC supplies pad mount transformers and complementary items. Texas.">
+<meta name="description" content="Tasso Industrial LLC supplies new pad mount transformers, rebuilt pole-mounted transformers, dry-type transformers, and transformer parts and components. Texas.">
 <meta name="theme-color" content="#0075C2">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%230075c2%27/%3E%3Cpath d=%27M16 17H48V25H36V37H44L32 50L20 37H28V25H16Z%27 fill=%27white%27/%3E%3C/svg%3E">
 <style>
@@ -18,7 +18,7 @@
     --line: #e1e8ef;
   }
   * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
+  html { scroll-behavior: smooth; scroll-padding-top: 16px; }
   body {
     margin: 0;
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
@@ -67,13 +67,18 @@
   section h2 { font-size: 30px; letter-spacing: -0.01em; margin: 0 0 8px; }
   section .lede { color: var(--muted); margin: 0 0 32px; max-width: 60ch; }
 
-  .cards { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+  .cards { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
   .card {
+    display: block;
     background: #fff;
     border: 1px solid var(--line);
     border-radius: 16px;
     padding: 26px;
+    color: inherit;
+    text-decoration: none;
+    transition: border-color .15s, box-shadow .15s;
   }
+  .card:hover { border-color: var(--blue); box-shadow: 0 6px 20px rgba(0,117,194,.10); }
   .card::before {
     content: "";
     display: block;
@@ -85,6 +90,43 @@
   }
   .card h3 { margin: 0 0 8px; font-size: 19px; }
   .card p { margin: 0; color: var(--muted); }
+  .also { margin: 28px 0 0; color: var(--muted); }
+
+  .product { padding: 64px 0; border-top: 1px solid var(--line); }
+  .product.alt { background: var(--soft); }
+  .product .grid { display: grid; gap: 40px; grid-template-columns: 1.1fr 1fr; align-items: start; }
+  .product .tag {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--blue);
+    margin-bottom: 8px;
+  }
+  .product h2 { margin-bottom: 14px; }
+  .product p { margin: 0 0 14px; color: var(--muted); max-width: 58ch; }
+  .product p.cta { margin: 22px 0 0; }
+  .spec {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 24px 26px;
+  }
+  .spec h3 { margin: 0 0 12px; font-size: 14px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink); }
+  .spec ul { list-style: none; margin: 0; padding: 0; }
+  .spec li { position: relative; padding: 9px 0 9px 22px; border-top: 1px solid var(--line); color: var(--ink); }
+  .spec li:first-child { border-top: 0; }
+  .spec li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 18px;
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
+    background: var(--blue);
+  }
 
   .contact-box {
     background: var(--blue);
@@ -101,11 +143,15 @@
 
   footer { padding: 28px 0 44px; color: var(--muted); font-size: 14px; text-align: center; }
 
+  @media (max-width: 800px) {
+    .product .grid { grid-template-columns: 1fr; gap: 24px; }
+  }
   @media (max-width: 560px) {
     nav a { margin-left: 16px; }
     .logo { width: 134px; }
     .hero { padding: 52px 0 60px; }
     section { padding: 52px 0; }
+    .product { padding: 48px 0; }
     .contact-box { padding: 26px; }
   }
 </style>
@@ -136,23 +182,125 @@
       <h2>What we supply</h2>
       <p class="lede">Our core product is the pad mount transformer, supported by complementary items.</p>
       <div class="cards">
-        <div class="card">
+        <a class="card" href="#padmount">
           <h3>Pad mount transformers</h3>
           <p>New pad mount transformers.</p>
-        </div>
-        <div class="card">
+        </a>
+        <a class="card" href="#polemount">
           <h3>Pole-mounted transformers</h3>
           <p>Rebuilt pole-mounted transformers.</p>
-        </div>
-        <div class="card">
-          <h3>Complementary items</h3>
-          <p>Dry-type transformers, switchgear, parts and components, and other transformer types.</p>
-        </div>
+        </a>
+        <a class="card" href="#drytype">
+          <h3>Dry-type transformers</h3>
+          <p>Air-cooled units for indoor and enclosed locations.</p>
+        </a>
+        <a class="card" href="#parts">
+          <h3>Parts and components</h3>
+          <p>Bushings, fuses, gauges, tap changers, and more.</p>
+        </a>
+      </div>
+      <p class="also">We also supply switchgear and other transformer types.</p>
+    </div>
+  </section>
+
+  <section class="product alt" id="padmount">
+    <div class="wrap grid">
+      <div>
+        <span class="tag">New</span>
+        <h2>Pad mount transformers</h2>
+        <p>A pad mount transformer sits at ground level on a concrete pad, sealed inside a locked, tamper-resistant steel cabinet. It takes distribution voltage from an underground feed and steps it down to the voltage a site actually runs on, which makes it the usual choice for commercial buildings, industrial plants, and field facilities where the public or other crews may be nearby.</p>
+        <p>Most are liquid-filled, with the windings and core sitting in insulating oil that also carries heat away. The cabinet separates the high-voltage and low-voltage compartments, so connections stay protected and the unit is safe to approach.</p>
+        <p class="cta"><a class="btn" href="#contact">Request a quote</a></p>
+      </div>
+      <div class="spec">
+        <h3>Commonly specified</h3>
+        <ul>
+          <li>Single-phase or three-phase</li>
+          <li>Radial feed or loop feed</li>
+          <li>Live-front or dead-front connections</li>
+          <li>Mineral oil or high fire point fluid such as FR3</li>
+          <li>No-load tap changer for voltage adjustment</li>
+          <li>Pad-lockable cabinet with gauges and pressure relief</li>
+          <li>Fusing, switches, and lightning arresters</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <section id="contact" style="padding-top:0">
+  <section class="product" id="polemount">
+    <div class="wrap grid">
+      <div>
+        <span class="tag">Rebuilt</span>
+        <h2>Pole-mounted transformers</h2>
+        <p>Pole-mounted transformers hang from utility poles and make the last voltage step on an overhead line, feeding homes, shops, and remote sites off the distribution system. They are compact, oil-filled, and built to stay in service outdoors for decades, which is why rebuilding a sound unit is a practical alternative to buying new.</p>
+        <p>Many are conventional, with protection added separately on the pole. Others are completely self-protected, known as CSP, with a breaker and fuse built into the tank.</p>
+        <p class="cta"><a class="btn" href="#contact">Request a quote</a></p>
+      </div>
+      <div class="spec">
+        <h3>Commonly specified</h3>
+        <ul>
+          <li>Conventional or CSP (completely self-protected)</li>
+          <li>kVA rating matched to the load</li>
+          <li>Primary and secondary voltage, plus tap range</li>
+          <li>Single units, or banked for three-phase service</li>
+          <li>Lightning arresters and internal fault detectors</li>
+          <li>FR3 fluid, wildlife guards, and other options</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="product alt" id="drytype">
+    <div class="wrap grid">
+      <div>
+        <span class="tag">Complementary</span>
+        <h2>Dry-type transformers</h2>
+        <p>Dry-type transformers use air, not oil, to cool the windings, with solid insulation around the coils. With no liquid to contain or sample, they suit buildings, control rooms, plants, and other indoor or enclosed locations where fire safety and low upkeep come first.</p>
+        <p>They range from low-voltage units that power lighting, motors, and controls up to medium-voltage designs used in distribution and unit substations. Matching the unit to its enclosure, load, and ventilation is where most of the selection work happens.</p>
+        <p class="cta"><a class="btn" href="#contact">Request a quote</a></p>
+      </div>
+      <div class="spec">
+        <h3>Commonly specified</h3>
+        <ul>
+          <li>Single-phase or three-phase</li>
+          <li>Low-voltage or medium-voltage</li>
+          <li>NEMA 1 for indoor, NEMA 3R for outdoor</li>
+          <li>Temperature rise of 80, 115, or 150°C</li>
+          <li>Aluminum or copper windings</li>
+          <li>Vacuum-pressure-impregnated coils</li>
+          <li>K-rated designs for non-linear loads</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="product" id="parts">
+    <div class="wrap grid">
+      <div>
+        <span class="tag">Complementary</span>
+        <h2>Parts and components</h2>
+        <p>A transformer often goes down over one small part: a bushing, a fuse, a gauge, or a valve. The right replacement has to match the original on rating, interface, and fit, so the part number or the transformer's nameplate is the best place to start.</p>
+        <p>Send us a part number, or the make, model, and nameplate details of the unit, and tell us what you need to get running again.</p>
+        <p class="cta"><a class="btn" href="#contact">Request a quote</a></p>
+      </div>
+      <div class="spec">
+        <h3>Commonly requested</h3>
+        <ul>
+          <li>Bushings, spades, and connectors</li>
+          <li>Bayonet and current-limiting fuses</li>
+          <li>Liquid level, temperature, and pressure-vacuum gauges</li>
+          <li>Tap changers and loadbreak switches</li>
+          <li>Lightning arresters</li>
+          <li>Drain, fill, and sampling valves</li>
+          <li>Radiators and cooling fans</li>
+          <li>Insulating fluids, including mineral oil and FR3</li>
+          <li>Rubber goods such as elbows and inserts</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
     <div class="wrap">
       <div class="contact-box">
         <h2>Request a quote</h2>

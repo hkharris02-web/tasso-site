@@ -4,17 +4,21 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tasso Industrial | Power, Delivered. Transformers and Power Equipment</title>
-<meta name="description" content="Tasso Industrial supplies new and remanufactured pad mount and pole-mounted transformers, dry-type transformers, and transformer parts and components. Texas.">
-<meta name="theme-color" content="#0075C2">
+<meta name="description" content="Tasso Industrial supplies new and remanufactured pad mount and pole-mounted transformers, new dry-type transformers, and parts and components including electrical conduit and fuses. Texas.">
+<meta name="theme-color" content="#13294B">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/x-icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <style>
   :root {
     --ink: #101920;
     --muted: #4d5b68;
     --bg: #ffffff;
-    --soft: #f3f7fb;
-    --blue: #0075c2;
-    --blue-dark: #005f9f;
+    --soft: #f1f6fb;
+    --navy: #13294b;
+    --navy-dark: #0c1c36;
+    --blue: #4b9cd3;
+    --blue-text: #2a74a8;
     --line: #e1e8ef;
   }
   * { box-sizing: border-box; }
@@ -38,10 +42,10 @@
     gap: 16px;
     flex-wrap: wrap;
   }
-  .logo { display: block; width: 161px; aspect-ratio: 478 / 134; overflow: hidden; }
-  .logo img { display: block; height: auto; width: 125.5%; max-width: none; margin-left: -14%; margin-top: -11.92%; }
+  .logo { display: block; width: 200px; }
+  .logo img { display: block; width: 100%; height: auto; }
   nav a { color: var(--ink); text-decoration: none; margin-left: 24px; font-size: 15px; font-weight: 500; }
-  nav a:hover { color: var(--blue); }
+  nav a:hover { color: var(--blue-text); }
 
   .hero { background: var(--soft); padding: 80px 0 88px; }
   .hero h1 {
@@ -50,21 +54,22 @@
     letter-spacing: -0.02em;
     margin: 0 0 18px;
     max-width: 20ch;
+    color: var(--navy);
   }
   .hero p { font-size: 19px; max-width: 56ch; color: var(--muted); margin: 0 0 30px; }
   .btn {
     display: inline-block;
-    background: var(--blue);
+    background: var(--navy);
     color: #fff;
     text-decoration: none;
     padding: 14px 26px;
     border-radius: 12px;
     font-weight: 600;
   }
-  .btn:hover { background: var(--blue-dark); }
+  .btn:hover { background: var(--navy-dark); }
 
   section { padding: 72px 0; }
-  section h2 { font-size: 30px; letter-spacing: -0.01em; margin: 0 0 8px; }
+  section h2 { font-size: 30px; letter-spacing: -0.01em; margin: 0 0 8px; color: var(--navy); }
   section .lede { color: var(--muted); margin: 0 0 32px; max-width: 60ch; }
 
   .cards { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
@@ -78,7 +83,7 @@
     text-decoration: none;
     transition: border-color .15s, box-shadow .15s;
   }
-  .card:hover { border-color: var(--blue); box-shadow: 0 6px 20px rgba(0,117,194,.10); }
+  .card:hover { border-color: var(--blue); box-shadow: 0 6px 20px rgba(75,156,211,.20); }
   .card::before {
     content: "";
     display: block;
@@ -88,7 +93,7 @@
     background: var(--blue);
     margin-bottom: 16px;
   }
-  .card h3 { margin: 0 0 8px; font-size: 19px; }
+  .card h3 { margin: 0 0 8px; font-size: 19px; color: var(--navy); }
   .card p { margin: 0; color: var(--muted); }
   .also { margin: 28px 0 0; color: var(--muted); }
 
@@ -101,7 +106,7 @@
     font-weight: 600;
     letter-spacing: .08em;
     text-transform: uppercase;
-    color: var(--blue);
+    color: var(--blue-text);
     margin-bottom: 8px;
   }
   .product h2 { margin-bottom: 14px; }
@@ -113,7 +118,7 @@
     border-radius: 16px;
     padding: 24px 26px;
   }
-  .spec h3 { margin: 0 0 12px; font-size: 14px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink); }
+  .spec h3 { margin: 0 0 12px; font-size: 14px; letter-spacing: .08em; text-transform: uppercase; color: var(--navy); }
   .spec ul { list-style: none; margin: 0; padding: 0; }
   .spec ul + h3 { margin-top: 24px; }
   .spec li { position: relative; padding: 9px 0 9px 22px; border-top: 1px solid var(--line); color: var(--ink); }
@@ -130,16 +135,16 @@
   }
 
   .contact-box {
-    background: var(--blue);
+    background: var(--navy);
     color: #fff;
     border-radius: 20px;
     padding: 40px;
   }
-  .contact-box h2 { margin-top: 0; }
+  .contact-box h2 { margin-top: 0; color: #fff; }
   .contact-box p { margin: 0 0 4px; }
   .contact-box a { color: #fff; }
   .contact-grid { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin-top: 22px; }
-  .contact-grid dt { font-size: 13px; text-transform: uppercase; letter-spacing: .1em; color: #cfe6f7; }
+  .contact-grid dt { font-size: 13px; text-transform: uppercase; letter-spacing: .1em; color: #9cc9e8; }
   .contact-grid dd { margin: 2px 0 0; font-size: 20px; font-weight: 600; }
 
   footer { padding: 28px 0 44px; color: var(--muted); font-size: 14px; text-align: center; }
@@ -150,7 +155,7 @@
   }
   @media (max-width: 560px) {
     nav a { margin-left: 16px; }
-    .logo { width: 134px; }
+    .logo { width: 160px; }
     .hero { padding: 52px 0 60px; }
     section { padding: 52px 0; }
     .product { padding: 48px 0; }
@@ -162,7 +167,7 @@
 
 <header class="site">
   <div class="wrap">
-    <a class="logo" href="#top"><img src="image.png" alt="Tasso Industrial" width="600" height="248"></a>
+    <a class="logo" href="#top"><img src="tasso-logo.png" alt="Tasso Industrial" width="800" height="229"></a>
     <nav>
       <a href="#supply">What we supply</a>
       <a href="#contact">Contact</a>
@@ -198,7 +203,7 @@
         </a>
         <a class="card" href="#parts">
           <h3>Parts and components</h3>
-          <p>Bushings, fuses, gauges, tap changers, and more.</p>
+          <p>Bushings, fuses, gauges, tap changers, electrical conduit, and more.</p>
         </a>
       </div>
       <p class="also">We also supply switchgear and other transformer types.</p>
@@ -265,7 +270,7 @@
   <section class="product alt" id="drytype">
     <div class="wrap grid">
       <div>
-        <span class="tag">Complementary</span>
+        <span class="tag">New</span>
         <h2>Dry-type transformers</h2>
         <p>Dry-type transformers use air, not oil, to cool the windings, with solid insulation around the coils. With no liquid to contain or sample, they suit buildings, control rooms, plants, and other indoor or enclosed locations where fire safety and low upkeep come first.</p>
         <p>They range from low-voltage units that power lighting, motors, and controls up to medium-voltage designs used in distribution and unit substations. Matching the unit to its enclosure, load, and ventilation is where most of the selection work happens.</p>
@@ -292,7 +297,7 @@
         <span class="tag">Complementary</span>
         <h2>Parts and components</h2>
         <p>A transformer often goes down over one small part: a bushing, a fuse, a gauge, or a valve. The right replacement has to match the original on rating, interface, and fit, so the part number or the transformer's nameplate is the best place to start.</p>
-        <p>Send us a part number, or the make, model, and nameplate details of the unit, and tell us what you need to get running again.</p>
+        <p>We also supply the electrical components around the job, including electrical conduit, fittings, and fuses. Send us a part number, or the make, model, and nameplate details of the unit, and tell us what you need to get running again.</p>
         <p class="cta"><a class="btn" href="#contact">Request a quote</a></p>
       </div>
       <div class="spec">
@@ -300,6 +305,8 @@
         <ul>
           <li>Bushings, spades, and connectors</li>
           <li>Bayonet and current-limiting fuses</li>
+          <li>Fuses and fuse holders for general electrical use</li>
+          <li>Electrical conduit and fittings</li>
           <li>Liquid level, temperature, and pressure-vacuum gauges</li>
           <li>Tap changers and loadbreak switches</li>
           <li>Lightning arresters</li>
@@ -307,6 +314,7 @@
           <li>Radiators and cooling fans</li>
           <li>Insulating fluids, including mineral oil and FR3</li>
           <li>Rubber goods such as elbows and inserts</li>
+          <li>Other electrical supplies on request</li>
         </ul>
       </div>
     </div>
